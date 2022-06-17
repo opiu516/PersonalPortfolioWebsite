@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title> MartinKostov </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+		<script src = "JS/script.js"></script>
+	</head>
+	<body onresize = "updateLogicAssets()">
+		<link rel = "stylesheet" type = "text/css" href = "CSS/style.css" id = "styles"> 
+		<div class = "aboutMe choise" 
+			onmouseover = "aboutMeHovered()" onmouseleave = "aboutMeLeft()" onclick = "zoomIn('aboutMe');">
+			<p class = "title titleTop" id = "aboutMeTitle">About me</p>
+			<div class = "aboutMeLine"></div>
+			<p class = "aboutMeText"> 
+			Hello, I am third year student at Sofia University, studying Mathematics and Informatics. I have graduated system programming at "Професионална Гимназия по Електротехника" Varna, Bulgaria. I have been coding for 7+ years, 2 of which professionally. I have experience in JS, HTML, CSS, C++, C#, JAVA, Python. I have knowlage about Linux, SQL databases, GIT, Node JS and others. You can find some of my projects in github: 
+github.com/opiu516 . I am openly looking for a job.
+			</p>
+		</div>
+		<div class = "projects choise" 
+			onmouseover = "moveOutLogo(2)" onmouseleave = "fixLogo()" onclick = "zoomIn('aboutMe');">
+			<p class = "title titleTop">Projects</p>
+			<div class = "projectsLine"></div>
+			<div class = "projectsContainer">
+				<div class = "project" style = "background-color: #8F8389" onclick = "openScrapy()"> 
+					<p class = "projectTitle"> scrapTrawler </p>
+					<img class = "projectIcon" src = "IMG/scrapy.png">
+				</div>
+				<div class = "project" style = "background-color: #E7CFCD" onclick = "openIsland();"> 
+					<p class = "projectTitle"> IslandCrash </p>
+					<img class = "projectIcon" src = "IMG/island.png">
+				</div>
+				<div class = "project" style = "background-color: #7D8CA3" onclick = "openAI();"> 
+					<p class = "projectTitle"> A.I. for bolean </p>
+					<img class = "projectIcon" src = "IMG/ai.png">
+				</div>
+				<div class = "project" style = "background-color: #75B9BE" onclick = "openClicker();"> 
+					<p class = "projectTitle"> Clicker </p>
+					<img class = "projectIcon" src = "IMG/clicker.png">
+				</div>
+				<div class = "project" style = "background-color: #F9B5AC" onclick = "openBituteh();"> 
+					<p class = "projectTitle"> Bituteh </p>
+					<img class = "projectIcon" src = "IMG/bituteh.png">
+				</div>
+				<div class = "project" style = "background-color: #D0D6B5" onclick = "openRecursion();"> 
+					<p class = "projectTitle"> Recursion </p>
+					<img class = "projectIcon" src = "IMG/recur.png">
+				</div>
+			</div>
+		</div>
+		<div class = "other choise" 
+			onmouseover = "moveOutLogo(4)" onmouseleave = "fixLogo()" onclick = "zoomIn('aboutMe');">
+			<p class = "title titleBot" >Other</p>
+			<div class = "otherLine"></div>
+			<p class = "otherText"> 
+				I worked as a climbing coach for half a year. In high school I volunteered at local organisations which involved teaming up with people and organisig events.
+			</p>
+		</div> 
+		<div class = "contacts choise" 
+			onmouseover = "moveOutLogo(3)" onmouseleave = "fixLogo()" onclick = "zoomIn('aboutMe');">
+			<p class = "title titleBot">Contacts</p>
+			<div class = "contactsLine"></div>
+			<p class = "contactsText"> email: martin.kostov.work@gmail.com	<br> cell phone: 0894603256 <br> instagram: martin_kostov18		</p>
+		</div>
+		<div class = "logo" onclick = "zoomOut();">
+			<img src = "IMG/logo.png"  class = "logoImage">
+		</div>
+		<script> updateLogicAssets(); </script>
+	</body>
+</html>

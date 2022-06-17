@@ -1,0 +1,308 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	user-select: none;
+}
+
+.choise{
+	z-index: 1;
+	width: 100vw;
+	position: absolute;
+	transition: all 0s !important;
+}
+
+.aboutMe{
+	background-color: #720E07;
+	left: 0vw;
+	top: 0vh;
+	height: 30vh;
+}
+
+.projects{
+	background-color: #EECF6D;
+	left: 0vw;
+	top: 30vh;
+	height: 30vh;
+}
+
+.contacts{
+	background-color: #8E443D;
+	left: 0vw;
+	top: 60vh;
+	height: 30vh;
+}
+
+.other{
+	background-color: #003554;
+	left: 0vw;
+	top: 90vh;
+	height: 30vh;
+}
+
+.logo{
+	overflow: hidden;
+	z-index: 3;
+	transition-property: height,top;
+	transition-delay: 0s;
+	transition-duration: 0s;
+	position: absolute;
+	top: 100vh;	
+	left: 0vw;
+	text-align: center;
+	background-color: #FEF6D7;
+	width: 100vw;
+	height: 0vh;
+}
+
+.logoImage{
+	width: 40vw; 
+	position:absolute; 
+	left:30vw; 
+	top:25%;
+}
+
+
+.title{
+	top: 10vh;
+	font-size: 10vh;
+	transition: all 0s;
+	opacity: 0.7;
+	font-family: Alfa Slab One;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+
+
+.aboutMe:hover{
+	transition-property: height;
+	transition-duration: 1s !important;
+	z-index: 2;
+	top: 0vh;
+	height: 100vh;
+}
+
+.projects:hover{
+	transition-property: height;
+	transition-duration: 1s !important;
+	z-index: 2;
+	top: 0vh;
+	height: 100vh;
+}
+
+.contacts:hover{
+	transition-property: height;
+	transition-duration: 1s !important;
+	z-index: 2;
+	top: 0vh;
+	height: 100vh;
+}
+
+.other:hover{
+	transition-property: height;
+	transition-duration: 1s !important;
+	z-index: 2;
+	top: 0vh;
+	height: 100vh;
+	
+}
+
+.choise:hover > .title{
+	transition: all 1s;
+	font-size: 5vh !important;
+	top: 2vh !important;
+}
+
+.aboutMeLine{	
+	position: absolute;
+	background-color: white;
+	left: 7.5vw;
+	top: 10vh;
+	width: 0vw;
+	height: 1vh;
+	transition-property: top;
+	transition-duration: 0s;
+}
+
+.aboutMe:hover > .aboutMeLine{
+	transition-property: width, top;
+	transition-duration:0.8s, 0.8s;
+	transition-delay:0.8s, 1.6s;
+	width: 85vw;
+	top:60vh;
+}
+
+.aboutMeText{
+	position: absolute;
+	width: 85vw;
+	height: 0vh;
+	top: 10vh;
+	left: 5vw;
+	overflow: hidden;
+	color: white;
+	transition-property: height;
+	transition-duration: 0s;
+	font-size: 2vh;
+}
+
+.aboutMe:hover > .aboutMeText{
+	transition-property: height;
+	transition-duration:0.8s;
+	transition-delay:1.65s;
+	height: 55vh;
+}
+
+.projectsLine{	
+	position: absolute;
+	background-color: black;
+	left: 7.5vw;
+	top: 10vh;
+	width: 0vw;
+	height: 1vh;
+	transition-property: top;
+	transition-duration: 0s;
+}
+
+.projects:hover > .projectsLine{
+	transition-property: width, top;
+	transition-duration:0.8s, 0.8s;
+	transition-delay:0.8s, 1.6s;
+	width: 85vw;
+	top:60vh;
+}
+
+.projectsContainer{
+	position: absolute;
+	width: 85vw;
+	height: 0vh;
+	top: 10vh;
+	left: 9vw;
+	overflow: hidden;
+	color: white;
+	transition-property: height;
+	transition-duration: 0s;
+	
+}
+
+
+
+.projects:hover > .projectsContainer{
+	transition-property: height;
+	transition-duration: 0.8s;
+	transition-delay: 1.6s;
+	height: 50vh;
+}
+
+.project{
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	cursor: pointer;
+	display: inline-block;
+	width: 27vw;
+	height: 22vh;
+	margin-bottom: 3vh;
+}
+
+.projectTitle{
+	position: absolute;
+	font-size: 2vw;
+	width: 27vw;
+	height: 7vh;
+	margin-top: 17vh;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	font-size: 2vh;
+}
+
+.projectIcon{
+	margin-top: 1vh;
+	margin-left: 1vw;
+	position: absolute;
+	width: 24vw;
+	height: 15vh;
+}
+
+.otherLine{	
+	position: absolute;
+	background-color: white;
+	left: 7.5vw;
+	top: 10vh;
+	width: 0vw;
+	height: 1vh;
+	transition-property: top;
+	transition-duration: 0s;
+}
+
+.other:hover > .otherLine{
+	transition-property: width, top;
+	transition-duration:0.8s, 0.8s;
+	transition-delay:0.8s, 1.6s;
+	width: 85vw;
+	top:60vh;
+}
+
+.contactsLine{	
+	position: absolute;
+	background-color: black;
+	left: 7.5vw;
+	top: 10vh;
+	width: 0vw;
+	height: 1vh;
+	transition-property: top;
+	transition-duration: 0s;
+}
+
+.contacts:hover > .contactsLine{
+	transition-property: width, top;
+	transition-duration:0.8s, 0.8s;
+	transition-delay:0.8s, 1.6s;
+	width: 85vw;
+	top:60vh;
+}
+
+.contactsText{
+	position: absolute;
+	width: 85vw;
+	height: 0vh;
+	top: 10vh;
+	left: 5vw;
+	overflow: hidden;
+	color: white;
+	transition-property: height;
+	transition-duration: 0s;
+	color: black;
+	font-size: 2.5vh;
+}
+
+.contacts:hover > .contactsText{
+	transition-property: height;
+	transition-duration:0.8s;
+	transition-delay:1.65s;
+	height: 22vh;
+}
+
+.otherText{
+	position: absolute;
+	width: 85vw;
+	height: 0vh;
+	top: 10vh;
+	left: 5vw;
+	overflow: hidden;
+	color: white;
+	transition-property: height;
+	transition-duration: 0s;
+	color: white;
+	font-size: 2.5vh;
+}
+
+.other:hover > .otherText{
+	transition-property: height;
+	transition-duration:0.8s;
+	transition-delay:1.65s;
+	height: 22vh;
+}
